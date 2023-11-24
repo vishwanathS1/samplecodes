@@ -1,0 +1,93 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>events</title>
+</head>
+<body><script src="js events.js"></script>
+<button id="myButton" onclick="handleClick()">Click me</button>
+<button "handleMouseOver()" onmouseout="handleMouseOut()">Hover me</button>
+</body>
+</html>!-->
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Events Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+    }
+    div {
+      padding: 20px;
+      border: 1px solid #ccc;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<button id="clickButton" onclick="handleClick()">Click me</button>
+
+<div id="hoverDiv" onmouseover="handleMouseOver()" onmouseout="handleMouseOut()">Hover me</div>
+
+<input type="text" id="changeInput" onchange="handleChange()" placeholder="Change me">
+
+<input type="text" id="keydownInput" onkeydown="handleKeyDown()" placeholder="Press a key">
+
+<form onsubmit="handleSubmit()">
+  <label for="submitInput">Submit me:</label>
+  <input type="text" id="submitInput">
+  <input type="submit" value="Submit">
+</form>
+
+<input type="text" id="focusInput" onfocus="handleFocus()" onblur="handleBlur()" placeholder="Focus me">
+
+<script>
+  function handleClick() {
+    console.log('Button clicked!');
+  }
+
+  function handleMouseOver() {
+    console.log('Mouse over the element');
+  }
+
+  function handleMouseOut() {
+    console.log('Mouse out of the element');
+  }
+
+  function handleChange() {
+    console.log('Input value changed:', document.getElementById('changeInput').value);
+  }
+
+  function handleKeyDown() {
+    console.log('Key pressed');
+  }
+
+  function handleSubmit() {
+    console.log('Form submitted');
+  }
+
+  function handleFocus() {
+    console.log('Input focused');
+  }
+
+  function handleBlur() {
+    console.log('Input blurred');
+  }
+</script>
+</body>
+</html>
+
