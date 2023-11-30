@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>callback</title>
+</head>
+<body><label id="mylabel"></label><script>
+    sum(2, 3, displayConsole);
+    function sum(x, y, vishwa){
+  let result = x + y;
+  vishwa(result);
+}
+
+function displayConsole(output){
+  console.log(output);
+}
+
+function displayDOM(output){
+  document.getElementById("myLabel").innerHTML = output;
+}
+</script>
+    
+</body>
+</html>
