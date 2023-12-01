@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ <script>
+let numbers = [1, 2, 3, 4, 5];
+let squares = numbers.map((value,index)=>{
+    return Math.pow(value, 2);
+});
+console.log(squares);
+
+const words = ["apple", "banana", "cherry"];
+
+const capitalizedWords = words.map(word => word.toUpperCase());
+
+console.log(capitalizedWords); // Output: ["APPLE", "BANANA", "CHERRY"]
+
+ </script>   
+</body>
+</html>

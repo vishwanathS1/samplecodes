@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ages=[17,23,16,44,10,3,59];
+        let adults= ages.filter(checkAge);
+        // adults.foreach(print);
+        function checkAge (element){
+            return element>=18;
+        }
+        console.log(adults);
+
+
+        function print(element){
+            console.log(element);
+        }
+        let ww=ages.forEach(print);
+        console.log(ww);
+        ages.foreach((index,value)=>{
+            console.log(index,value); 
+        });
+        
+
+    </script>
+    
+</body>
+</html>
